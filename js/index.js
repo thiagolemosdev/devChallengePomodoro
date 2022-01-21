@@ -1,8 +1,9 @@
-function pegarDados() {
+(() => {
   const botoes = document.querySelectorAll(".seta");
   let minutos = document.querySelector(".minutos");
   let pausas = document.querySelector(".pausas");
   let sessoes = document.querySelector(".sessoes");
+  const comecar = document.querySelector(".comecar");
 
   botoes.forEach((el) => {
     el.addEventListener("click", function (event) {
@@ -28,9 +29,11 @@ function pegarDados() {
     });
   });
 
-  const comecar = document.querySelector(".comecar");
   comecar.addEventListener("click", function (event) {
     event.preventDefault();
+    localStorage.setItem("minutos", minutos.innerText);
+    localStorage.setItem("pausas", pausas.innerText);
+    localStorage.setItem("sessoes", sessoes.innerText);
+    window.location.href = "pomodoro.html";
   });
-}
-pegarDados();
+})();
