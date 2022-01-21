@@ -11,11 +11,77 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   width: 800px;
+  margin-top: 20px;
 }
 
 nav > p {
   font-size: 1.5em;
   font-weight: 500;
+}
+
+nav button {
+  font-size: 1em;
+  background: #3c4262;
+  border: 0;
+  padding: 15px 30px 15px 30px;
+  color: #bdc4e7;
+  /* font-weight: bold; */
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+main div.tempo {
+  background: #3c4262;
+  padding: 20px;
+  border-radius: 50%;
+  margin-top: 70px;
+}
+
+main section p {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 500;
+  background: #3c4262;
+  padding: 60px 20px 60px 20px;
+  border-radius: 50%;
+  border: 3px solid #219653;
+}
+
+main div.descricao h2 {
+  margin: 0;
+  font-size: 4em;
+  color: #219653;
+}
+
+main div.descricao {
+  text-align: center;
+}
+
+main div.descricao span {
+  background: #219653;
+  font-size: 2px;
+  padding: 10px;
+  color: #219653;
+  border-radius: 50%;
+}
+
+main button.play {
+  margin-top: 20px;
+  font-size: 2em;
+  background: #3c4262;
+  border: 0;
+  padding: 15px 25px 15px 25px;
+  color: #bdc4e7;
+  /* font-weight: bold; */
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
